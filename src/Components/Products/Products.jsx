@@ -25,7 +25,7 @@ import carrot from '../../assets/carrot.png'
 import pumpkin from '../../assets/pumpkin.png'
 import redPaper from '../../assets/redpepper.png'
 import bananaFlower from '../../assets/bananaflower.png'
-import cabbage from '../../assets/cabbage.png'
+import cabbage from '../../assets/cabbageveggie.png'
 import peas from '../../assets/peas.png'
 
 const Products = ({ showAll = false, searchedProduct = '' }) => {
