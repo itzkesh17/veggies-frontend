@@ -25,7 +25,7 @@ import carrot from '../../assets/carrot.png'
 import pumpkin from '../../assets/pumpkin.png'
 import redPaper from '../../assets/redpepper.png'
 import bananaFlower from '../../assets/bananaflower.png'
-import cappage from '../../assets/cabbage.png'
+import cabbage from '../../assets/cabbage.png'
 import peas from '../../assets/peas.png'
 
 const Products = ({ showAll = false, searchedProduct = '' }) => {
@@ -56,7 +56,7 @@ const Products = ({ showAll = false, searchedProduct = '' }) => {
       { id: 20, image: pumpkin,       title: "Pumpkin",       price: 40 },
       { id: 21, image: redPaper,      title: "RedPepper",     price: 62 },
       { id: 22, image: bananaFlower,  title: "BananaFlower",  price: 80 },
-      { id: 23, image: cappage,       title: "Cabbage",       price: 33 },
+      { id: 23, image: cabbage,       title: "Cabbage",       price: 33 },
       { id: 24, image: peas,          title: "Peas",          price: 45 }
     ];
 
