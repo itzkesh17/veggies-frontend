@@ -1,0 +1,229 @@
+.admin-container {
+  height: 100vh;
+  padding: 2rem;
+  background-color: rgb(228, 231, 235);
+  position: relative;
+  .admin-head{
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        margin-bottom: 1rem;
+    }
+    select {
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
+        width: 250px;
+        appearance: none;
+        border: none;
+        outline: none;
+        background-color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+  }
+  .admin-line{
+    border: none;
+    height: 1px;
+    background-color: rgba(184, 182, 182, 0.486);
+    margin-bottom: 3rem;
+  }
+  .stats-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 2rem;
+    h3{
+      text-align: center;
+      padding: 2.4rem 5rem;
+      font-size: 1.5rem;
+      color: rgb(63, 165, 63);
+      background-color: white;
+      border: 1px solid #ddd;
+      span{
+        display: block;
+        font-size: .8rem;
+        padding-top: .7rem;
+        color: black;
+      }
+    }
+    .payment-methods{
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 2rem 5rem;
+      border-radius: .3rem;
+      text-align: center;
+      h4{
+        font-size: .8rem;
+        color: black;
+        margin-top: .5rem;
+      }
+      h5{
+        font-size: .8rem;
+        padding: .3rem;
+        color: rgb(63, 165, 63);
+      }
+    }
+  }
+  .orders-grid {
+    display: grid;
+    grid-template-columns: repeat((3, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .order-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    h4{
+      color: rgba(68, 66, 66, 0.459);
+      padding: .8rem 0;
+      font-size: .9rem;
+      border-bottom: .1rem solid rgba(68, 66, 66, 0.123);
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0.4rem 0;
+    }
+
+    button {
+      background-color: crimson;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      margin-top: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+  .go-home{
+     border: none;
+     background-color: white;
+     padding: .6rem .8rem;
+     font-size: 1.1rem;
+     border-radius: 50%;
+     position: absolute;
+     top: 6rem;
+     right: 1.5rem;
+     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .admin-container {
+  height: fit-content;
+  padding: 2rem;
+  background-color: rgb(228, 231, 235);
+  .admin-head{
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        font-size: .7rem;
+        margin-bottom: 1rem;
+    }
+    select {
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
+        width: 120px;
+        appearance: none;
+        border: none;
+        outline: none;
+        background-color: white;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+  }
+  .admin-line{
+    border: none;
+    height: 1px;
+    background-color: rgba(184, 182, 182, 0.486);
+    margin-bottom: 3rem;
+  }
+  .stats-card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    gap: 2rem;
+    h3{
+      text-align: center;
+      padding: 2.4rem 5rem;
+      font-size: 1.5rem;
+      color: rgb(63, 165, 63);
+      background-color: white;
+      border: 1px solid #ddd;
+      span{
+        display: block;
+        font-size: .8rem;
+        padding-top: .7rem;
+        color: black;
+      }
+    }
+    .payment-methods{
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 2rem 5rem;
+      border-radius: .3rem;
+      text-align: center;
+      h4{
+        font-size: .8rem;
+        color: black;
+        margin-top: .5rem;
+      }
+      h5{
+        font-size: .8rem;
+        padding: .3rem;
+        color: rgb(63, 165, 63);
+      }
+    }
+  }
+  .orders-grid {
+    display: grid;
+    grid-template-columns: repeat((1, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .order-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    h4{
+      color: rgba(68, 66, 66, 0.459);
+      padding: .8rem 0;
+      font-size: .9rem;
+      border-bottom: .1rem solid rgba(68, 66, 66, 0.123);
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0.4rem 0;
+    }
+
+    button {
+      background-color: crimson;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      margin-top: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+  .go-home{
+     border: none;
+     background-color: white;
+     padding: .4rem .6rem;
+     font-size: .9rem;
+     border-radius: 50%;
+     position: absolute;
+     top: 6rem;
+     right: 1.5rem;
+     cursor: pointer;
+  }
+}
+
+}

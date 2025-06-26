@@ -1,0 +1,53 @@
+$backroud-col: #b3e2a7;
+
+.notfound-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    row-gap: 1rem;
+    img{
+        width: 50%;
+    }
+    button{
+        border: none;
+        padding: .8rem 2rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        background-color: $backroud-col;
+        transition: background-color .6s;
+    }
+    button:hover{
+        background-color: rgb(63, 165, 63);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .notfound-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    row-gap: 1rem;
+    img{
+        width: 50%;
+    }
+    p{
+        font-size: .6rem;
+    }
+    button{
+        border: none;
+        font-size: .8rem;
+        padding: .6rem 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        background-color: $backroud-col;
+        transition: background-color .6s;
+    }
+    button:hover{
+        background-color: rgb(63, 165, 63);
+    }
+}
+}

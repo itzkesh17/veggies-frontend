@@ -1,0 +1,465 @@
+$backroud-col: #b3e2a7;
+
+.checkout-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  background-color: #E5F9DB;
+  .checkout-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: .5px solid rgba(148, 143, 143, 0.322);
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 5rem .9rem;
+    background-image: url('/assets/checkout-cover.jpg');
+    background-size: cover;
+    width: 100%;
+    border-radius: 1rem;
+    color: white;
+    h2 {
+     text-align: center;
+    }
+  }
+  
+.step-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+  position: relative;
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step.active .circle {
+  background-color: $backroud-col;
+  color: black;
+}
+
+.line {
+  height: 3px;
+  background-color: #ddd;
+  flex: 1;
+  margin: 0 0.5rem;
+  position: relative;
+  top: -5px;
+  transition: background-color 0.3s ease;
+}
+
+.line.active {
+  background-color: $backroud-col;
+}
+
+.step p {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.delivery-info,
+.order-summary,
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.delivery-info{
+    span{
+        margin-left: -18rem;
+    }
+    button{
+      border: none;
+      padding: .6rem 1rem;
+      background-color: $backroud-col;
+      border-radius: 1rem;
+      transition: background-color .5s;
+    }
+    button:hover{
+      background-color: rgb(63, 165, 63);
+      cursor: pointer;
+    }
+}
+.order-summary{
+  ul{
+    background-color: white;
+    padding: 1rem 1.7rem;
+    border-radius: 1rem;
+    li{
+      list-style: none;
+      padding: .3rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+input, textarea, select {
+  width: 30%;  
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type='number'] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+textarea {
+  resize: vertical;
+  height: 80px;
+  resize: none;
+}
+.summary-btn{
+  button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: $backroud-col;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: rgb(63, 165, 63);
+}
+
+button + button {
+  margin-left: 1rem;
+}
+}
+
+.error {
+  color: crimson;
+  font-size: 0.75rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.3rem;
+}
+.payment-section{
+  padding-top: 1rem;
+  width: 28%;
+  height: 35rem;
+  border-radius: 1rem;
+  select{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    background-color: #b3e2a7;
+    appearance: none;           
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .card-form{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+    input{
+      width:95%;
+    }
+  }
+  .upi-form{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+     input{
+      width:95%;
+    }
+  }
+  .bank-form{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+     input{
+      width:95%;
+    }
+  }
+  .payment-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    button{
+      border: none;
+      padding: .6rem 1.5rem;
+      background-color: $backroud-col;
+      border-radius: 1rem;
+      margin-bottom: 20rem;
+      transition: background-color .5s;
+    }
+    button:hover{
+      background-color: rgb(63, 165, 63);
+      cursor: pointer;
+    }
+  }
+  .cod-form{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+}
+}
+
+@media screen and (max-width:600px) {
+
+.checkout-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  background-color: #E5F9DB;
+  .checkout-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid rgba(148, 143, 143, 0.322);
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 1rem .9rem;
+    background-image: url('/assets/checkout-cover.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    color: white;
+    h2 {
+     text-align: center;
+    }
+  }
+  
+.step-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+  position: relative;
+}
+
+.circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: .9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step.active .circle {
+  background-color: $backroud-col;
+  color: black;
+}
+
+.line {
+  height: 3px;
+  background-color: #ddd;
+  flex: 1;
+  margin: 0 0.5rem;
+  position: relative;
+  top: -5px;
+  transition: background-color 0.3s ease;
+}
+
+.line.active {
+  background-color: $backroud-col;
+}
+
+.step p {
+  margin-top: 0.3rem;
+  font-size: 0.65rem;
+  color: #333;
+}
+
+.delivery-info,
+.order-summary,
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.delivery-info{
+    span{
+        margin-left: -10rem;
+    }
+    button{
+      border: none;
+      padding: .6rem 1rem;
+      background-color: $backroud-col;
+      border-radius: 1rem;
+      transition: background-color .5s;
+    }
+    button:hover{
+      background-color: rgb(63, 165, 63);
+      cursor: pointer;
+    }
+}
+.order-summary{
+  ul{
+    background-color: white;
+    padding: 1rem 1.7rem;
+    border-radius: 1rem;
+    li{
+      list-style: none;
+      padding: .3rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+input, textarea, select {
+  width: 80%;  
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type='number'] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+textarea {
+  resize: vertical;
+  height: 80px;
+  resize: none;
+}
+.summary-btn{
+  button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: $backroud-col;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: rgb(63, 165, 63);
+}
+
+button + button {
+  margin-left: 1rem;
+}
+}
+
+.error {
+  color: crimson;
+  font-size: 0.75rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.3rem;
+}
+.payment-section{
+  width: 85%;
+  height: 35rem;
+  border-radius: 1rem;
+  select{
+    display: flex;
+    flex-direction: column;
+    padding-right: 0rem;
+    background-color: #b3e2a7;
+    appearance: none;           
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .card-form{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    width: 90%;
+    input{
+      width:90%;
+    }
+  }
+  .upi-form{
+    width: 90%;
+     input{
+      width:90%;
+    }
+  }
+  .bank-form{
+    width: 90%;
+     input{
+      width:90%;
+    }
+  }
+  .payment-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    button{
+      border: none;
+      padding: .6rem 1.5rem;
+      background-color: $backroud-col;
+      border-radius: 1rem;
+      
+      transition: background-color .5s;
+    }
+    button:hover{
+      background-color: rgb(63, 165, 63);
+      cursor: pointer;
+    }
+  }
+}
+}
+}

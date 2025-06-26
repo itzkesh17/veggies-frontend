@@ -1,0 +1,53 @@
+$color-template: #41B06E;
+
+.top-container{
+    height: 75vh;
+    position: relative;
+    .next-compo{
+        font-size: 1.7rem;
+        padding-top: 5rem;
+        padding-left: 8rem;
+        margin-bottom: 3rem;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 5.2rem;
+        left: 2rem;
+        width: 5rem;
+        height: 1rem;
+        background-color: $color-template;
+        border-radius: 28% 72% 83% 17% / 47% 47% 53% 53%;
+    }
+    .card-container{
+        margin-top: 5rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .top-container{
+        height: 60vh;
+        position: relative;
+        .next-compo{
+            font-size: 1rem;
+            padding-top: 5rem;
+            padding-left: 6.5rem;
+            margin-bottom: 3rem;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 5rem;
+            left: 3rem;
+            width: 2.8rem;
+            height: .9rem;
+            background-color: $color-template;
+            border-radius: 28% 72% 83% 17% / 47% 47% 53% 53%;
+        }
+        .card-container{
+            margin-top: 5rem;
+            cursor: pointer;
+        }
+    }
+}

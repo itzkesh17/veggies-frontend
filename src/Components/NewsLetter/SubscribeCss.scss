@@ -1,0 +1,98 @@
+$color-template: #41B06E;
+
+.subscribe-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    row-gap: 1.2rem;
+    h4{
+        color: $color-template;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    p{
+        color: #534d4363;
+        font-weight: 600;
+    }
+    .input-container{
+        position: relative;
+        background-color: white;
+        width: 30%;
+        padding: .1rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: .2rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        form{
+            width: 100%;
+            input{
+            border: none;
+            outline: 0;
+            width: 70%;
+            padding: .6rem .5rem;
+            font-weight: 800;
+            }
+            button{
+                border: none;
+                width: 22%;
+                font-weight: 700;
+                border-left: .1rem solid #534d4350;
+                background-color: white;
+                cursor: pointer;
+            }   
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .subscribe-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        align-items: center;
+        row-gap: 1.2rem;
+        h4{
+            color: $color-template;
+            font-size: .8rem;
+        }
+        h2{
+            font-size: 1.1rem;
+        }
+        p{
+            color: #534d4363;
+            font-weight: 600;
+            font-size: .8rem;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .input-container{
+            background-color: white;
+            width: 90%;
+            padding: .1rem 0;
+            display: flex;
+            justify-content: space-evenly;
+            border-radius: .2rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            input{
+                border: none;
+                outline: 0;
+                width: 60%;
+                padding: .6rem 0;
+                font-weight: 700;
+                font-size: .8rem;
+            }
+            button{
+                border: none;
+                width: 30%;
+                font-size: .8rem;
+                font-weight: 700;
+                border-left: .1rem solid #534d4350;
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}

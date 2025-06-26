@@ -1,0 +1,95 @@
+.all-products-page{
+    
+    .mid-content{
+        padding: 1rem 7rem;
+        background-image: url('/assets/cover.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+        input{
+            width: 25rem;
+            height: 2.5rem;
+            border: none;
+            outline: none;
+            padding: 1rem 1rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            z-index: 1;
+        }
+    }
+    .pro-content{
+        .product-head{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2.5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-bottom: 1rem;
+            h1{
+            font-size: 1.6rem;
+            }
+
+        }
+        .pro-line{
+            margin-left: 5rem;
+            margin-right: 5rem;
+            margin-bottom: 7rem;
+            opacity: .5;
+            }
+    }
+    .foot-pro{
+        margin-top: 85rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .all-products-page{
+    .mid-content{
+        padding: 1rem 7rem;
+        background-image: url('/assets/cover.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+        input{
+            width: 25rem;
+            height: 2.5rem;
+            border: none;
+            outline: none;
+            padding: 1rem 1rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            z-index: 1;
+        }
+    }
+    .pro-content{
+        .product-head{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2.5rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            h1{
+            font-size: 1.6rem;
+            }
+            
+        }
+        .pro-line{
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-bottom: 7rem;
+            opacity: .5;
+        }
+    }
+    .foot-pro{
+        margin-top: 5rem;
+    }
+}
+}
