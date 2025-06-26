@@ -89,7 +89,7 @@ const Register = () => {
           const savedCart = localStorage.getItem(
             `cart_items_${matchedUser.email}`
           );
-          setCartItems(savedCart ? JSON.parse(savedCart) : []);
+          setCartItems(savedCart ? JSON.parse(savedCart) : [])
 
           toast.success(`Welcome back, ${matchedUser.username}!`, {
             transition: Zoom,
